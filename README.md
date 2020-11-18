@@ -1,4 +1,4 @@
-# Polaris - User management and Authentication
+# Flask App - Boilerplate with User management and Authentication
 
 ### To run the app
 
