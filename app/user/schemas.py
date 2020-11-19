@@ -1,7 +1,7 @@
 from marshmallow import fields
 from marshmallow.validate import Length, Regexp
 from app.extentions import ma
-from .models import UserModel, UserConnectionModel
+from .models import UserModel
 
 
 class UserSchema(ma.SQLAlchemySchema):

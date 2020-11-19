@@ -8,8 +8,8 @@ from pluggy import HookimplMarker
 from sqlalchemy import func
 from app.core.helpers import handleInternalError
 from app.extentions import db
-from .models import UserModel, UserConnectionModel
-from .schemas import UserSchema, UserInviteSchema, AcceptInviteSchema, UserConnectSchema, UserFullProfileSchema
+from .models import UserModel
+from .schemas import UserSchema, UserInviteSchema, AcceptInviteSchema, UserFullProfileSchema
 from .validators import validate_email
 from .exceptions import ValidationError, AuthenticationError
 
@@ -19,7 +19,6 @@ user_full_profile = UserFullProfileSchema()
 users_schema = UserSchema(many=True)
 user_invite_schema = UserInviteSchema()
 accept_invite_schema = AcceptInviteSchema()
-user_connect_schema = UserConnectSchema()
 
 
 class User(Resource):
